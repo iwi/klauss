@@ -1,5 +1,8 @@
 # Klauss
 
+[![hackmd-github-sync-badge](https://hackmd.io/wklSLzVuQR6UeAmgtLQ77Q/badge)](https://hackmd.io/wklSLzVuQR6UeAmgtLQ77Q)
+
+
 ## nombre de jugadors
 Mínim dos jugadors.
 Probablement ampliable a 3+ jugadors.
