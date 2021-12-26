@@ -21,6 +21,26 @@ El guanyador és qui aconsegueix tenir prou informació per a resoldre el proble
   - aprenents de mag o cuiners que busquen la recepta òptima...???
   - 
 
+### solució 
+La solució del problema a resoldre es determina aleatòriament al principi.
+
+La solució està composta de parts d'un trencaclosques. 
+
+Cal que decidim si la solució és única i pre-establerta, o si depèn del transcórrer de la partida. La primera opció és més fàcil i objectiva, però limita les opcions. La segona fa qu el joc sigui una mica més complicat i el fa més difícil d'escalar (jugar-lo amb pocs jugadors).
+
+Cal que les parts lliguin?
+
+Una resposta parcial permet considerar puntuacions que permeten la sensació de proximitat/llunyania a l'èxit: e.g. el jugador x ha quedat a 5% de guanyar.
+
+Una idea: hi ha una sèrie de "condicions inicials" determinades a l'atzar: plovia, hi havia un sopar, era de nit, etc.
+
+Cada sospitós també té una sèrie de coartades o històries, també determinades a l'atzar: estava regant el jardí, estava parlant amb noséqui, etc.
+
+La feina dels investigadors és trobar les discrepàncies entre les històries.
+
+Problema: si les discrepàncies no són 100% objectives, com es decideix qui menteix i com? Ho voten els investigadors? Què hi guanyen?
+
+
 ## detectius (TBC)
 A partir d'aquí assumeixo que el tema són detectius, però crec que hauria de ser possible abstreure'n les idees i canviar-ne el tema si pensem que una altra cosa ens agrada més.
 
@@ -37,6 +57,13 @@ La demostració inclou poder explicar els detalls del cas:
   - Per què
 
 ### mecàniques
+Els jugadors descarten cartes de la seva mà per fer accions.
+
+Poden:
+- fer l'acció de la carta que descarten, o bé
+- fer una acció estàndard.
+
+### fluxe del joc
 El joc està estructurat en torns i etapes.
 Cada etapa inclou un nombre indeterminat de torns.
  
