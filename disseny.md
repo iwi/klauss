@@ -40,6 +40,10 @@ La feina dels investigadors és trobar les discrepàncies entre les històries.
 
 Problema: si les discrepàncies no són 100% objectives, com es decideix qui menteix i com? Ho voten els investigadors? Què hi guanyen?
 
+Seguint amb la idea que proposes: pensava que amb l'ordinador podem fer que es crei una situació on tot lligui. Aleshores superposar-hi les històries vistes per cada un dels personatges, és a dir el que cada un pot saber del que ha passat. I finalment l'assassí té una història que en general coincideix però que en algun punt discrepa amb els altres.
+
+... potser és massa complicat, però crec que m'agradaria mirar-ho una mica més a fons abans de descartar-ho.
+
 
 ## detectius (TBC)
 A partir d'aquí assumeixo que el tema són detectius, però crec que hauria de ser possible abstreure'n les idees i canviar-ne el tema si pensem que una altra cosa ens agrada més.
