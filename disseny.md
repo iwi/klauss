@@ -125,7 +125,40 @@ Cada etapa cal aconseguir resoldre part del problema:
   - llocs: habitacions, parts d'un mapa
   - jugadors/detectius
 
-## detalls per a la implementació
+---
+
+## implementació
+La idea és que donats uns elements inicials del joc (personatges, llocs i objectes, i rang temporal), es crei un escenari on per a cada unitat temporal en el rang quedi determinat on és cada element i en quina situació està.
+
+Existeixen restriccions en les relacions dels elements del joc. És a dir casos impossibles que l'escenari no pot acceptar.
+
+La determinació de l'escenari del joc es crearà iterativament de manera que es validi que les restriccions del joc es compleixen.
+
+Les etapes de creació de l'escenari cal validar-les i després automatitzar-les. En principi, esperem que les iteracions vagin de més restrictives i importants per al joc a les més flexibles i possiblement intrascendents per al resultat.
+
+Per exemple, cal determinar...:
+  1. el mort
+  2. on ha mort
+  3. en quin moment ha mort
+  4. on ha estat abans de morir
+  5. quin ha estat la manera d'assassinar (mètode, arma, causa de la mort)
+  6. qui ha estat l'assassí
+  7. si el cadàver ha estat traslladat - on, quan i per qui (l'assassí?)
+  8. on ha estat l'assassí abans de l'assassinat
+  9. on ha estat l'assassí després de l'assassinat
+  10. on s'ha deixat/amagat l'arma
+  11. on han estat la resta de personatges durant tot el rang de temps
+  12. on són tots els objectes durant tot el rang de temps (i qui els ha mogut)
+
+Cal una llista de
+  - personatges
+  - rang de temps i unitats de temps
+  - llocs
+  - maneres d'assassinar
+  - objectes (tot objecte pot ser una arm?)
+  - motius per assassinar?
+ 
+
 
 ### idees
 - en Python?
