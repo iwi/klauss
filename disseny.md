@@ -48,6 +48,8 @@ Seguint amb la idea que proposes: pensava que amb l'ordinador podem fer que es c
 ## detectius (TBC)
 A partir d'aquí assumeixo que el tema són detectius, però crec que hauria de ser possible abstreure'n les idees i canviar-ne el tema si pensem que una altra cosa ens agrada més.
 
+Cada detectiu te una habilitat diferent.
+
 ### resum
 El personatge X ha desaparegut. Es sospita un assassinat. Alguns detectius han estat contractats i se'ls ha demanat trobar el culpable. El detectiu que pugui demostrar primer qui és l'assassí guanya.
 
@@ -58,7 +60,7 @@ La demostració inclou poder explicar els detalls del cas:
   - On
   - Com
   - Quan
-  - Per què
+  - Per què -  motivacio
 
 ### mecàniques
 Els jugadors descarten cartes de la seva mà per fer accions.
@@ -80,6 +82,10 @@ Cada torn els jugadors (detectius) fan:
 Cada jugador té un nombre _n_ de _tokens_ per torn.
 Cada acció té un cost en tokens.
 D'aquesta manera el total d'accions per torn queda limitat i les accions més útils requereixen major nombre de tokens.
+
+Tracking de temps - 
+Podem fer que el cost estigui relacionat amb el temps. Fer accions llargues si tenen mes valor o curtes (en temps) si tenen menys valor.
+
 
 ##### accions possibles
 Les accions poden ser:
@@ -113,14 +119,31 @@ Cada etapa cal aconseguir resoldre part del problema:
   3. Determinar qui és l'assassí i quin va ser el motiu
 
 
-### Elements del joc
+### elements del joc
   - personatges - poden ser morts o vius, poden ser assassins o no
   - objectes - inclou: armes, objectes petits contextuals (e.g. làmpada, got), elements contextuals (e.g. piscina, endoll).
   - llocs: habitacions, parts d'un mapa
   - jugadors/detectius
 
-
-
+## implementacio
+- en Python?
+- array amb ["ocasio",
+             "mitjans",
+             "motivacio"]
+- elements de l'escenari ["llocs", "personatges", "mitjans", "temps", "coartades"]
+- ["pistes"]
+- Ens cal "tags", que son caracteristiques de tots els elements del joc, i que permeten decidir si certes combinacions son viables o no.
+- Els "tags" son informacio que es el que podem anar aconseguint.
+- Maneres d'aconseguir dades
+    - investigar un lloc
+    - interrogar un sospitos
+    - investigar l'escenari del crim
+    - 
+- per a cada element calen restriccions.
+- quantificacio en hores
+- Que poden fer els investigadors: 
+    - 
+- llista tancada de sospitosos/personatges (disponible al principi)
 
 ---
 
