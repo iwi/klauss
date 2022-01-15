@@ -125,7 +125,9 @@ Cada etapa cal aconseguir resoldre part del problema:
   - llocs: habitacions, parts d'un mapa
   - jugadors/detectius
 
-## implementacio
+## detalls per a la implementació
+
+### idees
 - en Python?
 - array amb ["ocasio",
              "mitjans",
@@ -144,6 +146,67 @@ Cada etapa cal aconseguir resoldre part del problema:
 - Que poden fer els investigadors: 
     - 
 - llista tancada de sospitosos/personatges (disponible al principi)
+
+### disseny per a la implementació
+#### descripció dels elements
+##### llocs
+El mapa és d'un poblet petit e.g. 10 cases.
+
+Cada casa té uns atributs estàtics.
+
+**idea**: potser per a la narrativa val la pena considerar els camins entre llocs. És a dir, si dos llocs són a distància 1, existeix un camí que els uneix, i per a passar d'un lloc a l'altre cal passar un temps al camí. 
+
+_atributs estàtics_
+  - `id_lloc`: un string, possiblement un hash de la resta d'atributs? e.g. "asdf1"
+  - `nom_lloc`: un string amb significat, e.g. "botiga", "casa1"
+  - `contingut_objectes_estatics`: array d'identificadors d'objectes estàtics 
+  - `grandaria`: enter que defineix la grandaria del lloc. Inicialment 1 (petita), 2 (mitjana) o 3 (gran). Defineix el nombre de personatges que hi poden concórrer.
+  - `estada_minima`: enter que defineix el mínim nombre d'unitats de temps que un personatge cal que sigui en un lloc.
+  - `estada_maxima`: enter que defineix el màxim nombre d'unitats de temps que cal que un personatge **viu** sigui en un lloc.
+  - `probabilitat_de_sortir`: nombre aleatori entre 0 i 1 que defineix la probabilitat de que un personatge que és en aquest lloc hi romangui la següent unitat de temps. 
+  - `relacions_valides`: taules a considerar per a validar relacions??
+
+_atributs dinàmics_
+  - `personatges`: diccionari o array d'arrays que ens mostra per a cada unitat de temps quins personatges són en aquest lloc.
+  - `objectes_mòbils`: diccionari o array d'arrays que ens mostra per a cada unitat de temps quins objectes mòbils són en aquest lloc.
+
+##### personatges
+
+_atributs estàtics_
+  - `id_personatge`: string, possiblement un hash de la resta d'atributs? e.g. "asdf1"
+  - `nom_personatge`: un string amb un nom intel·ligible.
+  - `força`: enter entre 1 i 10 (serveix per a definir la capacitat de atacar per força un altre personatge).
+  - `intel·ligencia`: enter entre 1 i 10 (serveix per a definir la capacitat d'enganyar)
+  - `habilitat`: diccionari amb parelles d'`id_objecte` i un booleà que defineix si el personatge té l'habilitat d'usar l'objecte.
+  - `velocitat`: ??? idea ... volem fer que per alguns personatges puguin moure's més que d'altres en el mateix nombre d'unitats de temps?
+  - `capacitat`: enter que defineix el màxim d'objectes (segons pes?) que un personatge pot dur en un moment concret.
+  - `relacions_valides`: taules a considerar per a validar relacions??
+
+_atributs dinàmics_
+  - ``
+
+##### objectes_mòbils
+
+_atributs estàtics_
+  - `id_objecte`: string, possiblement un hash de la resta d'atributs? e.g. "asdf1"
+  - `nom_objecte`: string intel·ligible e.g. "ganivet", "corda".
+  - ``
+
+
+
+#### descripció de les relacions possibles
+  - `contingut_lloc`: taula amb dues columnes, una amb el `id_lloc` i l'altra amb l'`id_objecte`. Defineix les combinacions de lloc i contingut que són vàlides. 
+  - `lloc_lloc`: taula amb tres columnes, `id_lloc_origen`, `id_lloc_destí`, `distancia` (enter). Defineix la dimensió de l'esforç necessari per anar d'un lloc a un altre. 
+  - `raons_personatge_lloc`: taula amb les raons per les quals el personatge x pot ser en el lloc y
+
+
+
+#### restriccions & _assumptions_
+  - dos personatges que concorren en un mateix lloc es veuen - i.e. saben que l'altre personatge era en aquell lloc en aquell moment i poden proporcionar aquesta informació.
+  - 
+
+
+
 
 ---
 
