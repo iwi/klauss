@@ -157,6 +157,8 @@ Cal una llista de
   - maneres d'assassinar
   - objectes (tot objecte pot ser una arm?)
   - motius per assassinar?
+  - accions que poden fer els investigadors
+  - habilitats especials dels investigadors
  
 
 
@@ -203,8 +205,8 @@ _atributs dinàmics_
   - `personatges`: diccionari o array d'arrays que ens mostra per a cada unitat de temps quins personatges són en aquest lloc.
   - `objectes_mòbils`: diccionari o array d'arrays que ens mostra per a cada unitat de temps quins objectes mòbils són en aquest lloc.
 
+---
 ##### personatges
-
 _atributs estàtics_
   - `id_personatge`: string, possiblement un hash de la resta d'atributs? e.g. "asdf1"
   - `nom_personatge`: un string amb un nom intel·ligible.
@@ -238,6 +240,107 @@ _atributs estàtics_
   - dos personatges que concorren en un mateix lloc es veuen - i.e. saben que l'altre personatge era en aquell lloc en aquell moment i poden proporcionar aquesta informació.
   - 
 
+### Exemples de test
+#### Personatges
+- La vella darrera la cortina: "mentidera", "xafardera", "casolana", "lenta" [tortuga].
+- El rodamón: "covard", "necessitat", "nòmada", "pobre", "idealista". [cranc ermità]
+- L'escriptor: "observador", "tranquil", "hàbil" [ós].
+- La jugadora: "endeutada", "inquieta", "xerraire", "mentidera" [serp].
+- L'empresària: "adinerada", "ambiciósa", "intel·ligent", "mentidera" [llop].
+- L'estudiant: 
+    ["força": CERT,
+    "intel·ligència": CERT,
+    "velocitat": CERT,
+    "diners": FALS,
+    "destresa": CERT,
+    "nocturnitat": CERT,
+    "animal identificador": "pop"]
+- L'estrangera o forana
+    ["força": FALS,
+    "intel·ligència": CERT,
+    "velocitat": CERT,
+    "diners": CERT,
+    "destresa": CERT,
+    "nocturnitat": CERT,
+    "animal identificador": "mosca"]
+- El predicador
+    ["força": FALS,
+    "intel·ligència": CERT,
+    "velocitat": FALS,
+    "diners": FALS,
+    "destresa": CERT,
+    "nocturnitat": FALS,
+    "animal identificador": "lloro"]
+- El científic [guineu]
+    ["força": FALS,
+    "intel·ligència": CERT,
+    "velocitat": FALS,
+    "diners": FALS,
+    "destresa": CERT,
+    "nocturnitat": CERT,
+    "animal identificador": "pop"]
+    
+ 
+
+| Personatge | animal       | força | intel·ligència | velocitat | diners | nocturnitat | destresa |
+|:---------- |:------------ |:-----:|:--------------:|:---------:|:------:|:-----------:|:--------:|
+| Vella      | tortuga      |  No   |       Sí       |    No     |   Sí   |     No      |    No    |
+| Rodamon    | cranc ermità |  No   |       No       |    No     |   No   |     No      |    Sí    |
+| Jugadora   | serp         |  No   |       Sí       |    No     |   No   |     Sí      |    Sí    |
+| Escriptor  | ós           |  No   |       Sí       |    No     |   No   |     Sí      |    Sí    |
+| Empresària | llop         |  No   |       Sí       |    Sí     |   Sí   |     No      |    No    |
+| Estudiant  | pop          |  Sí   |       Sí       |    Sí     |   No   |     Sí      |    No    |
+| Estrangera | mosca        |  Sí   |       No       |    Sí     |   Sí   |     Sí      |    Sí    |
+| Predicador | lloro        |  No   |       Sí       |    No     |   No   |     No      |    No    |
+| Científic  | guineu       |  No   |       Sí       |    No     |   No   |     Sí      |    Sí    |
+| Botiguer   | mosquit      |  No   |       No       |    No     |   Sí   |     Sí      |    Sí    |
+   
+    
+#### Objectes
+- La pistola: "arma", "fàcil", "il·legal", "soroll".
+- El martell: "eina", "força".
+- El verí de rates: "neteja", "ingestió", "mortal".
+- El fals graó: "trampa", "difícil", "localitzat", "ineficaç".
+- La serra a motor: "eina", "força", "soroll".
+- La gilette: "eina", "habilitat", "difícil".
+
+
+
+| Objecte              | causa mort per ... | cal força | cal destresa | sospitós | parany / cal intel·ligència | ràpid | sorollós | cal sigil | efectiu |
+|:-------------------- |:------------------ |:---------:|:------------:|:--------:|:---------------------------:|:-----:|:--------:|:---------:|:-------:|
+| pistola              | ferida             |    No     |      No      |    Sí    |             No              |  Sí   |    Sí    |    Sí     |   Sí    |
+| martell              | contusió           |    Sí     |      No      |    No    |             No              |  Sí   |    No    |    Sí     |   Sí    |
+| verí                 | falla vital        |    No     |      No      |    Sí    |             Sí              |  No   |    No    |    No     |   Sí    |
+| fals graó            | contusió           |    No     |      Sí      |    No    |             Sí              |  Sí   |    Sí    |    Sí     |   No    |
+| serra motora         | ferida             |    Sí     |      No      |    No    |             No              |  Sí   |    Sí    |    No     |   Sí    |
+| ganiveta             | ferida             |    No     |      Sí      |    No    |             No              |  Sí   |    No    |    Sí     |   No    |
+| corda                | ofec               |    Sí     |      No      |    No    |             No              |  Sí   |    No    |    Sí     |   No    |
+| explosiu             | ferida             |    No     |      Sí      |    Sí    |             Sí              |  Sí   |    Sí    |    No     |   No    |
+| làmpara              | contusió           |    Sí     |      No      |    No    |             No              |  Sí   |    No    |    Sí     |   No    |
+| habitació congelador | falla vital        |    No     |      No      |    No    |             Sí              |  No   |    No    |    No     |   No    |
+| estàtueta            | contusió           |    Sí     |      No      |    No    |             No              |  Sí   |    No    |    Sí     |   No    |
+| bossa de plàstic     | ofec               |    Sí     |      Sí      |    No    |             No              |  Sí   |    No    |    Sí     |   Sí    |
+|                      |                    |           |              |          |                             |       |          |           |         |
+
+
+
+#### Llocs
+- La cuina: "foc", "droga", "electricitat".
+- El garatge: "eina", "electricitat", "droga", "neteja".
+- El bany: "aigua", "electricitat", "neteja".
+- 
+
+
+
+| Lloc                 | amagar? | matar sense objectes? | # portes | visible de cases contígues? | màxim persones | entrada lliure |
+|:-------------------- |:-------:|:---------------------:|:--------:|:---------------------------:|:--------------:|:--------------:|
+| Casa de <personatge> |   Sí    |          No           |    2     |             No              |       3        |       No       |
+| Hotel                |   Sí    |          No           |    3     |             No              |       5        |       Sí       |
+| Botiga               |   No    |          No           |    1     |             No              |       3        |       Sí       |
+| Metge                |   No    |          No           |    1     |             No              |       2        |       Sí       |
+| Restaurant           |   Sí    |    Sí (congelador)    |    1     |             No              |       5        |       Sí       |
+| Piscina              |   No    |     Sí (piscina)      |    1     |             Sí              |       5        |       Sí       |
+| Parking              |   No    |       Sí (fum)        |    2     |             Sí              |       4        |       Sí       |
 
 
 
