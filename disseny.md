@@ -44,6 +44,78 @@ Cada jugador és un detectiu que vol resoldre el cas d'assassinat.
 
 Cada detectiu te una habilitat diferent. 
 
+## Relat d'una partida imaginària
+
+Comença la partida. L'escriptor apareix mort al bany de casa seva.  
+Els investigadors hi arriben a les 8 AM.
+
+L'investigador Auguste Dupin analitza l'escena del crim per recollir informació. Per exemple:
+- Hora probable de la mort (un rang d'hores)
+- Causa de la mort
+- Instrument de la mort ("arma", o "eina", "verí", etc.).
+- Pistes (objectes, empremptes, etc.)
+
+>Aquestes són possibles les opcions que té un invesigador en l'escena de l'asssassinat: investigar hora, causa, instrument, pistes. Investigar-ho porta temps. Caldria evitar que el primer que faci un investigador sigui investigar aquestes 4 coses, i que tothom faci el mateix. Potser es podria fer que quan un investigador descobreix una cosa, tots els que estiguin a la mateixa sala també ho descobreixen (mode multijugador).
+
+Auguste decideix que vol saber l'hora de la mort. Pot intentar esbrinar-ho ell mateix amb la seva habilitat (investigació?), o pot sol·licitar un informe forense. La primera opció li portarà només una estona (1 hora?), mentre que la segona li demana molt més temps (3 hores?).
+
+Auguste utilitza investigació. Té un 7/10 en aquesta habilitat. Com millor sigui la seva tirada, més afinarà el temps. Si falla de molt, no en tindrà ni idea. Si fa una pífia, pot arribar a una conclusió equivocada.
+
+Fa una bona tirada (però ell no ho sap), i el resultat li diu que l'hora de la mort són entres les 2 i les 3 AM.
+
+L'investigador Pare Brown, també va a l'escena del crim, però decideix investigar la causa de la mort. Decideix demanar un informe forense, que triga (3 hores?) però li dóna la certitud que l'escriptor ha mort ofegat sota l'aigua i que té marques de violència, com si algú l'hagués subjectat dins la banyera.
+
+> Això fa pensar que les pistes poden tenir diferents nivells, i que el nivell d'èxit de les tirades fa que es desvetlli més o menys informació. Per exemple, el motiu de la mort pot dir: 1) ofegat, 2) marques de violència, 3) ADN de l'assassí a les ungles.
+
+Auguste decideix interrogar sospitosos, per veure qui podria haver estat a aquella hora al bany.
+
+Brown, en canvi, decideix estudiar tots els sospitosos per veure qui tindria prou força per ofegar la víctima i, probablement, tingui marques o esgarrapades provocades per la víctima.
+
+> Problema: si l'assassinat l'ha de fer algú amb força, pot ser que eliminem molts sospitosos de cop. Potser tampoc és problema, perquè encara cal demostrar-ho. Que un jugador sàpiga massa aviat qui és l'assassí no és problema si encara ho ha de demostrar.
+
+Auguste interroga tots els sospitosos. Els pregunta on eren entre les 2 i les 3 AM de la nit anterior. Tothom li diu que estaven dormint, però ell descobreix que almenys tres menteixen. Com?
+
+La vella li diu que dormia, però quan interroga el rodamón, aquest li diu que va veure llum a casa de la vella a aquella hora. Com arriba a aquesta conclusió?
+
+Quan Auguste interroga el rodamón, li fa diverses preguntes. Ho fa utilitzant la seva habilitat (interrogació?), amb la que hi té un 8/10 i per tant se'n fia bastant. Li pregunta: on eres entre les 2 i les 3AM de la nit anterior? El rodamón diu: al carrer.
+
+> És a dir, que una de les accions dels investigadors és preguntar a un personatge on eren en una determinada hora, o al revés, si han estat en algun lloc en un moment donat.
+
+També li pregunta si va veure alguna cosa estranya. I el rodamón li diu que va veure llum a casa a la vella.
+
+> És a dir, que l'investigador li pot preguntar a un personatge si en un lloc i una hora determinades, ha estat en contacte (visual o físic), amb un altre personatge. Això implica que l'ordinador "sàpiga" que el rodamón ha vist llum a casa a la vella a aquella hora. Com? Llocs que "es toquen"?
+
+Brown, per la seva banda, interroga sospitosos per trobar els forts. Utilitza la seva habilitat (insight?). 
+
+> Els investigadors tenen una acció que és "calibrar" un personatges, que vol dir descobrir algunes de les seves "etiquetes". Poden mirar d'esbrinar si en tenen una de determinada (més fàcil), o saber quines tenen en general (més difícil i atzarós).
+
+Després d'unes hores d'investigació (cada acció consumeix una hora?), Tant Auguste com Brown tenen tres sospitosos. Auguste té una persona sense coartada i dues que menteixen.
+
+> Els personatges han de tenir un element coartada, que pot ser falsa o certa.
+
+Brown té tres personatges que són forts i per tant poden haver comès l'assassinat.
+
+> En aquest moment, si Auguste i Brown comparteixen informació, podrien saber qui és l'assassí creuant els tres de l'un i els tres de l'altre, si només un coincideix.
+
+Els dos investigadors comparteixen la informació (cal una acció "compartir informació"), de manera que tots dos ja saben qui és l'assassí. 
+
+> Brown podria fer una anàlisi d'ADN del cadàver per acusar l'assassí, però això no es pot fer sense proves. En tot cas, només es pot fer una anàlisi així amb una persona, no s'hi val a fer anàlisis a tothom per resoldre un cas. En quin moment es pot fer una anàlisi d'ADN?
+
+Auguste decideix tornar a l'escena del crim i buscar-hi empremptes de l'assassí.
+
+> No es poden buscar empremptes en general, cal buscar-les d'una persona en concret. Es podria "trencar el joc" fent 10 accions seguides de buscar empremtes? Com evitar-ho? Perquè porten molt de temps? Necessites proves prèvies? Potser per buscar proves primer cal tenir pistes...
+
+Brown per la seva banda decideix registrar la casa de l'assassí quan no hi és, i hi troba les joies de la víctima.
+
+> Algunes pistes han de tenir la categoria de prova i són les que fan guanyar. Podem fer-ho qualitativament (això és pista, això és prova) o per acumulació (calen tres pistes per tancar algú).
+
+Els dos han resolt el cas, però el que ho ha fet primer guanya.
+
+> No hi he posat cap pista falsa. Si un investigador falla per molt una tirada, pot arribar a conclusions falses.
+
+> Potser cada sospitós ha de tenir un "estatus": innocent, sospitós, assassí, investigat... Aquest estatus es fa automàticament, no el posa el jugador. Si un jugador vol fer un anàlisi d'empremtes a un sospitós, ha d'aconseguir que tingui un estatus d'investigat, per exemple, i només ho pot aconseguir acumulant pistes: mentides, objectes, falta de coartada, etc.
+
+
 ###### **A FER**
   - Cal estudiar a fons quines habilitats poden tenir in de quina manera afectaran la manera en la que els jugadors obtenen informació. @rogerG quines idees en tens?
 
@@ -71,7 +143,7 @@ Cada etapa inclou un nombre indeterminat de torns i cada torn un nombre d'accion
  
 ### _etapes_
 Cada etapa cal aconseguir resoldre part del problema:
-  1. Trobar el cos, determinar quan va morir i on va ocorrer l'assassinat
+  1. Trobar el cos, determinar quan va morir i on va ocórrer l'assassinat
   2. Determinar la causa de la mort i els objectes (armes?) implicats
   3. Determinar qui és l'assassí i quin va ser el motiu
 
@@ -124,6 +196,11 @@ Al moure's, un jugador obté informació si arriba a una part no coneguda del ma
 
 El mapa és desconegut a l'inici de la partida. 
 
+
+###### **A FER**
+  - Els aspectes de la secció _moviment_ cal discutir-los - no tinc clar si és millor que el mapa sigui conegut de bon principi.
+  - Una opció seria que quins llocs hi ha sigui conegut, però on estan situats no?
+
 #### proposta de solució
 En qualsevol (?) moment un jugador pot proposar la solució. Si l'encerta s'acaba el joc i guanya. Si s'equivoca li permet guanyar informació però cal que s'agreguin dificultats al seu joc.
 
@@ -173,9 +250,7 @@ Cal una llista de
   - [ ] maneres d'assassinar
 
 
-### disseny per a la implementació
-#### descripció dels elements
-##### llocs
+### llocs
 El mapa és d'un poblet petit e.g. 10 cases.
 
 Cada casa té uns atributs estàtics.
@@ -198,7 +273,7 @@ _atributs dinàmics_
   - `objectes_mòbils`: diccionari o array d'arrays que ens mostra per a cada unitat de temps quins objectes mòbils són en aquest lloc.
 
 ---
-##### personatges
+### personatges
 _atributs estàtics_
   - `id_personatge`: string, possiblement un hash de la resta d'atributs? e.g. "asdf1"
   - `nom_personatge`: un string amb un nom intel·ligible.
@@ -212,61 +287,44 @@ _atributs estàtics_
 _atributs dinàmics_
   - ``
 
-##### objectes_mòbils
-
-_atributs estàtics_
-  - `id_objecte`: string, possiblement un hash de la resta d'atributs? e.g. "asdf1"
-  - `nom_objecte`: string intel·ligible e.g. "ganivet", "corda".
-  - ``
-
-#### descripció de les relacions possibles
-  - `contingut_lloc`: taula amb dues columnes, una amb el `id_lloc` i l'altra amb l'`id_objecte`. Defineix les combinacions de lloc i contingut que són vàlides. 
-  - `lloc_lloc`: taula amb tres columnes, `id_lloc_origen`, `id_lloc_destí`, `distancia` (enter). Defineix la dimensió de l'esforç necessari per anar d'un lloc a un altre. 
-  - `raons_personatge_lloc`: taula amb les raons per les quals el personatge x pot ser en el lloc y
-
-#### restriccions & _assumptions_
-  - dos personatges que concorren en un mateix lloc es veuen - i.e. saben que l'altre personatge era en aquell lloc en aquell moment i poden proporcionar aquesta informació.
-  - 
-
-### Exemples de test
-#### Personatges
+#### exemples de personatges 
 - La vella darrera la cortina: "mentidera", "xafardera", "casolana", "lenta" [tortuga].
 - El rodamón: "covard", "necessitat", "nòmada", "pobre", "idealista". [cranc ermità]
 - L'escriptor: "observador", "tranquil", "hàbil" [ós].
 - La jugadora: "endeutada", "inquieta", "xerraire", "mentidera" [serp].
 - L'empresària: "adinerada", "ambiciósa", "intel·ligent", "mentidera" [llop].
-- L'estudiant: 
-    ["força": CERT,
-    "intel·ligència": CERT,
-    "velocitat": CERT,
-    "diners": FALS,
-    "destresa": CERT,
-    "nocturnitat": CERT,
+- L'estudiant:   
+    ["força": CERT,  
+    "intel·ligència": CERT,  
+    "velocitat": CERT,  
+    "diners": FALS,  
+    "destresa": CERT,  
+    "nocturnitat": CERT,  
     "animal identificador": "pop"]
-- L'estrangera o forana
-    ["força": FALS,
-    "intel·ligència": CERT,
-    "velocitat": CERT,
-    "diners": CERT,
-    "destresa": CERT,
-    "nocturnitat": CERT,
+- L'estrangera o forana  
+    ["força": FALS,  
+    "intel·ligència": CERT,  
+    "velocitat": CERT,  
+    "diners": CERT,  
+    "destresa": CERT,  
+    "nocturnitat": CERT,  
     "animal identificador": "mosca"]
-- El predicador
-    ["força": FALS,
-    "intel·ligència": CERT,
-    "velocitat": FALS,
-    "diners": FALS,
-    "destresa": CERT,
-    "nocturnitat": FALS,
-    "animal identificador": "lloro"]
-- El científic [guineu]
-    ["força": FALS,
-    "intel·ligència": CERT,
-    "velocitat": FALS,
-    "diners": FALS,
-    "destresa": CERT,
-    "nocturnitat": CERT,
-    "animal identificador": "pop"]
+- El predicador  
+    ["força": FALS,  
+    "intel·ligència": CERT,  
+    "velocitat": FALS,  
+    "diners": FALS,  
+    "destresa": CERT,  
+    "nocturnitat": FALS,  
+    "animal identificador": "lloro"]  
+- El científic [guineu]  
+    ["força": FALS,  
+    "intel·ligència": CERT,  
+    "velocitat": FALS,  
+    "diners": FALS,  
+    "destresa": CERT,  
+    "nocturnitat": CERT,  
+    "animal identificador": "pop"]  
     
  
 
@@ -284,11 +342,17 @@ _atributs estàtics_
 | Botiguer   | mosquit      |  No   |       No       |    No     |   Sí   |     No      |    Sí    |
 | Cuiner | ratolí      |  No   |       Sí      |    No     |   No   |     Sí      |    Sí    |
 
-
 ###### **A FER**
   - Calcular la distància entre elements (personatges, objectes, llocs) la distància depèn de les difrències/similituds entre elements. Cal que tots els personatges siguin diferents en alguna característica?
     
-#### Objectes
+### objectes_mòbils
+
+_atributs estàtics_
+  - `id_objecte`: string, possiblement un hash de la resta d'atributs? e.g. "asdf1"
+  - `nom_objecte`: string intel·ligible e.g. "ganivet", "corda".
+  - ``
+
+#### exemple d'objectes
 - La pistola: "arma", "fàcil", "il·legal", "soroll".
 - El martell: "eina", "força".
 - El verí de rates: "neteja", "ingestió", "mortal".
@@ -308,19 +372,17 @@ _atributs estàtics_
 | explosiu             | ferida             |    No     |      Sí      |    Sí    |             Sí              |  Sí   |    Sí    |    No     |   No    |
 | làmpara              | contusió           |    Sí     |      No      |    No    |             No              |  Sí   |    No    |    Sí     |   No    |
 | habitació congelador | falla vital        |    No     |      No      |    No    |             Sí              |  No   |    No    |    No     |   No    |
-| estàtueta            | contusió           |    Sí     |      No      |    No    |             No              |  Sí   |    No    |    Sí     |   No    |
+| estatueta            | contusió           |    Sí     |      No      |    No    |             No              |  Sí   |    No    |    Sí     |   No    |
 | bossa de plàstic     | ofec               |    Sí     |      Sí      |    No    |             No              |  Sí   |    No    |    Sí     |   Sí    |
 |                      |                    |           |              |          |                             |       |          |           |         |
 
+### llocs
 
-
-#### Llocs
+#### exemples de llocs
 - La cuina: "foc", "droga", "electricitat".
 - El garatge: "eina", "electricitat", "droga", "neteja".
 - El bany: "aigua", "electricitat", "neteja".
 - 
-
-
 
 | Lloc                 | amagar? | matar sense objectes? | # portes | visible de cases contígues? | màxim persones | entrada lliure |
 |:-------------------- |:-------:|:---------------------:|:--------:|:---------------------------:|:--------------:|:--------------:|
@@ -332,8 +394,29 @@ _atributs estàtics_
 | Piscina              |   No    |     Sí (piscina)      |    1     |             Sí              |       5        |       Sí       |
 | Parking              |   No    |       Sí (fum)        |    2     |             Sí              |       4        |       Sí       |
 
+
+### descripció de les relacions possibles
+> [name=iwi][time=Sun, Jan 23, 2022 2:54 PM] una prova de comentari en markdown :grin: 
+    
+  - `contingut_lloc`: taula amb dues columnes, una amb el `id_lloc` i l'altra amb l'`id_objecte`. Defineix les combinacions de lloc i contingut que són vàlides. 
+  - `lloc_lloc`: taula amb tres columnes, `id_lloc_origen`, `id_lloc_destí`, `distancia` (enter). Defineix la dimensió de l'esforç necessari per anar d'un lloc a un altre. 
+  - `raons_personatge_lloc`: taula amb les raons per les quals el personatge x pot ser en el lloc y
+
+### restriccions & _assumptions_
+  - dos personatges que concorren en un mateix lloc es veuen - i.e. saben que l'altre personatge era en aquell lloc en aquell moment i poden proporcionar aquesta informació.
+  - 
+
+---
 ---
 ### idees
+pistes i proves -
+    - evidencia - calen objectes/proves que demostrin ...
+    - 
+    com fer-ho?
+
+    
+    
+    
 - en Python?
 - array amb ["ocasio",
              "mitjans",
