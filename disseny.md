@@ -1,6 +1,9 @@
+<!-- ![](./badges/maintained_yes.svg) -->
+![](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+![](https://hackmd.io/wklSLzVuQR6UeAmgtLQ77Q/badge)
+![](./badges/hackmd_badge.svg)
 # Klauss
 
-[![hackmd-github-sync-badge](https://hackmd.io/wklSLzVuQR6UeAmgtLQ77Q/badge)](https://hackmd.io/wklSLzVuQR6UeAmgtLQ77Q)
 
 
 ## nombre de jugadors
