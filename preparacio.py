@@ -14,7 +14,7 @@ def crea_culpable(nombre_de_sospitosos):
     culpable = random.choice(range(nombre_de_sospitosos))
     respostes_reals = np.array(np.zeros(nombre_de_sospitosos), dtype=bool)
     respostes_reals[culpable] = True
-    return respostes_reals, culpable.
+    return respostes_reals, culpable
 
 # Creació de les pistes
 def genera_utilitat_pistes(n_pistes):
