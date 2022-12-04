@@ -17,7 +17,7 @@ def crea_culpable(nombre_de_sospitosos):
     return respostes_reals, culpable
 
 # Creació de les pistes
-def genera_utilitat_pistes(n_pistes):
+def genera_utilitat_pistes(n_pistes, proporcio_utilitats):
     """ Crear una llista de la dificultat de les pistes.
     """
     utilitat_pistes = []
@@ -25,10 +25,11 @@ def genera_utilitat_pistes(n_pistes):
         dificultats = ['determinant',
                        'util',
                        'soroll']
-        dificultat = random.choice(dificultats)
+        dificultat = random.choices(population = dificultats,
+                                    weights = proporcio_utilitats)
         utilitat_pistes.append(dificultat)
 
-    return utilitat_pistes
+    return sum(utilitat_pistes, [])
 
 def genera_pista(n_sospitosos, culpable, utilitat_pista, utilitats):
     """ Crea un array de si una pista apunta o no a cada sospitós.
