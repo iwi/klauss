@@ -1,6 +1,7 @@
 # Dependencies
 import random
 import numpy as np
+import uuid
 
 class Pista():
     """Tipus pista
@@ -8,6 +9,7 @@ class Pista():
     """
 
     def __init__(self, nom, utilitat, n_sospitosos, lloc, culpable, utilitats):
+        self.id = uuid.uuid1()
         self.nom = nom
         self.utilitat = utilitat
         self.lloc = lloc
