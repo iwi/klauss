@@ -7,7 +7,7 @@ class Pista():
 
     """
 
-    def __init__(self, nom, utilitat, n_sospitosos, lloc, culpable):
+    def __init__(self, nom, utilitat, n_sospitosos, lloc, culpable, utilitats):
         self.nom = nom
         self.utilitat = utilitat
         self.lloc = lloc
