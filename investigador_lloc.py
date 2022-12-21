@@ -33,9 +33,9 @@ class Investigador():
         """
 
         index_pista = random.randint(0, len(lloc.pistes))
-        pista = lloc.pistes[index_pista].id
+        pista = lloc.pistes[index_pista]
         if pista not in self.pistes_trobades:
-            self.pistes_trobades.append.pista
+            self.pistes_trobades.append(pista)
         else:
             print("has trobat una pista que ja tenies, segueix buscant-ne")
 
