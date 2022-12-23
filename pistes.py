@@ -32,7 +32,7 @@ class Pista():
 
         return(indicadors)
 
-    def mostrar_pista(self):
+    def mostra_pista(self):
         """Mostra els detalls de la pista
 
         """
