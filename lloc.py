@@ -7,12 +7,13 @@ class Lloc():
     Cada lloc tindrà un número de pistes
     """
 
-    def __init__(self, nom, tipus):
+    def __init__(self, nom, tipus, posicio):
         """ Definició del lloc
         """
         self.id = uuid.uuid1()
         self.nom = nom
         self.tipus = tipus
+        self.posicio = posicio
         self.pistes = []
 
     def afegeix_pista(self,

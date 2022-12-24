@@ -1,5 +1,6 @@
 import uuid
 import random
+from math import sqrt
 
 class Investigador():
     """Tipus investigador
@@ -16,10 +17,14 @@ class Investigador():
         self.pistes_investigades = []
         self.investigacions = []
         self.llocs_investigats = []
+        self.temps = 0
 
     def investiga_pista(self, pista, distribucio_nivell_emmascaracio):
         """ .
         """
+
+        # gasta temps
+        self.temps += 2
 
         if pista not in self.pistes_trobades:
             print("aquesta pista no la tens.")
@@ -32,6 +37,9 @@ class Investigador():
         """ Cerquem una pista dins un lloc i l'afegim a les pistes trobades
         """
 
+        # gasta temps
+        self.temps += 1
+
         # mètode de trobar una pista dins el lloc aleatori - pot millorar-se
         index_pista = random.randint(0, len(lloc.pistes) - 1)
         pista = lloc.pistes[index_pista]
@@ -40,6 +48,11 @@ class Investigador():
         else:
             print("has trobat una pista que ja tenies, segueix buscant-ne")
 
-    def mou(self, moviment):
-        self.posicio[0] += moviment[0]
-        self.posicio[1] += moviment[1]
+    def mou(self, nova_posicio):
+
+        # gasta temps
+        self.temps += sqrt((self.posicio[0] - nova_posicio[0])**2 + (self.posicio[1] - nova_posicio[1])**2)
+
+        # canvia de posició
+        self.posicio[0] = nova_posicio[0]
+        self.posicio[1] = nova_posicio[1]
