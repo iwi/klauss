@@ -19,6 +19,17 @@ class Investigador():
         self.llocs_investigats = []
         self.temps = 0
 
+    def mostra_investigador(self):
+        """Mostra els detalls de l'investigador
+
+        """
+        print("Id: {}".format(self.id))
+        print("Nom: {}".format(self.nom))
+        print("Posició: {}".format(self.posicio))
+        print("Habilitats: {}".format(self.habilitats))
+        print("Temps gastat: {}".format(self.temps))
+        [print("Pistes trobades: {}".format(x.nom)) for x in self.pistes_trobades]
+
     def investiga_pista(self, pista, distribucio_nivell_emmascaracio):
         """ .
         """
