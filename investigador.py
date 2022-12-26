@@ -32,13 +32,14 @@ class Investigador():
             resultat_investigacio_pista = pista.emmascara(distribucio_nivell_emmascaracio)
             self.investigacions.append({"id_pista" : pista.id,
                                         "resultats" : resultat_investigacio_pista})
+            self.pistes_investigades = pista.id
 
     def cerca_pista(self, lloc):
         """ Cerquem una pista dins un lloc i l'afegim a les pistes trobades
         """
 
         # gasta temps
-        self.temps += 1
+        self.temps += 0.1
 
         # mètode de trobar una pista dins el lloc aleatori - pot millorar-se
         index_pista = random.randint(0, len(lloc.pistes) - 1)

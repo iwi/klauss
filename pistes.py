@@ -16,9 +16,9 @@ class Pista():
         self.n_sospitosos = n_sospitosos
         self.investigada = False
         self.culpable = culpable
-        self.indicadors = self.genera_indicadors(utilitats)
+        self.indicadors = self.__genera_indicadors(utilitats)
 
-    def genera_indicadors(self, utilitats):
+    def __genera_indicadors(self, utilitats):
         """ Crea un array de si una pista apunta o no a cada sospitós.
         """
         indicadors = []
@@ -58,13 +58,13 @@ class Pista():
         @return un array amb els indicadors de la pista emmascarats
         """
 
-        indicadors_emmascarats = map(lambda sospitos: self.emmascara_indicador(distribucio_nivell_emmascaracio,
+        indicadors_emmascarats = map(lambda sospitos: self.__emmascara_indicador(distribucio_nivell_emmascaracio,
                                                                                sospitos),
                                      range(self.n_sospitosos))
 
         return(list(indicadors_emmascarats))
 
-    def emmascara_indicador(self, distribucio_nivell_emmascaracio, sospitos):
+    def __emmascara_indicador(self, distribucio_nivell_emmascaracio, sospitos):
         """ Emmascara l'indicador d'un sospitós
         """
 
