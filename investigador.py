@@ -29,6 +29,9 @@ class Investigador():
         print("Habilitats: {}".format(self.habilitats))
         print("Temps gastat: {}".format(self.temps))
         [print("Pistes trobades: {}".format(x.nom)) for x in self.pistes_trobades]
+        [print("Pistes investigades: {}".format(x.nom)) for x in self.pistes_investigades]
+        [print("Llocs investigats: {}".format(x.nom)) for x in self.llocs_investigats]
+        [print("Investigacions: {}".format(x.nom)) for x in self.investigacions]
 
     def investiga_pista(self, pista, distribucio_nivell_emmascaracio):
         """ .
