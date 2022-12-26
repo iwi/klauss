@@ -71,4 +71,14 @@ Les pistes poden:
 
 
 ### Investigadors
-Un investigador ...
+Un investigador es crea donant-li:
+- un nom
+- un lloc inicial
+- una habilitat
+
+Automàticament rep un identificador únic.
+
+Un investigador pot:
+- cercar una pista en un lloc `cerca_pista()`
+- investigar una pista `investiga_pista()`
+- moure's `mou()`
