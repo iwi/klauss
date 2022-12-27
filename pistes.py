@@ -32,24 +32,9 @@ class Pista():
 
         return(indicadors)
 
-# mirar mètode màgic que si fas print agafi el mètode per a mostrar l'objecte (__str__ o una cosa així)
-    def mostra_pista(self):
-        """Mostra els detalls de la pista
-
-        """
-        print("Id: {}".format(self.id))
-        print("Nom: {}".format(self.nom))
-        print("Utilitat: {}".format(self.utilitat))
-        print("Lloc: {}".format(self.lloc))
-        print("Indicadors: {}".format(self.indicadors))
-        print("Investigada?  {}".format(self.investigada))
-        print("Nombre de sospitosos: {}".format(self.n_sospitosos))
-        print("Culpable: {}".format(self.culpable))
-
-
     def __str__(self):
         """Mostra els detalls de la pista
-        Fent ús de __str__ fem que print() funcioni per a imprimir objectes de tipus pista.
+        Fent ús del mètode màgic __str__ fem que print() funcioni per a imprimir objectes de tipus pista.
 
          https://www.pythontutorial.net/python-oop/python-__str__/
          https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html
