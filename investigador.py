@@ -46,7 +46,7 @@ class Investigador():
             resultat_investigacio_pista = pista.emmascara(distribucio_nivell_emmascaracio)
             self.investigacions.append({"id_pista" : pista.id,
                                         "resultats" : resultat_investigacio_pista})
-            self.pistes_investigades = pista.id
+            self.pistes_investigades.append(pista)
 
     def cerca_pista(self, lloc):
         """ Cerquem una pista dins un lloc i l'afegim a les pistes trobades
