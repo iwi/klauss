@@ -1,13 +1,21 @@
 # Klauss
 
 # Dependències
+from importlib import reload
 #import sys
+
 
 # Mòduls
 import pistes
 import investigador as inv
 import lloc
 import llista_sospitosos as sos
+
+# reload imports
+pistes = reload(pistes)
+inv = reload(inv)
+lloc = reload(lloc)
+sos = reload(sos)
 
 # Determinar el nombre de sospitosos
 n_sospitosos = 5
