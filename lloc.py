@@ -32,8 +32,7 @@ class Lloc():
     def afegeix_pista(self,
                       nom_pista,
                       utilitat_pista,
-                      n_sospitosos_pista,
-                      culpable_pista,
+                      culpabilitat,
                       utilitats_pista):
         """ Afegeix una pista al lloc.
         """
@@ -41,8 +40,7 @@ class Lloc():
         nova_pista = pistes.Pista(
             nom = nom_pista,
             utilitat = utilitat_pista,
-            n_sospitosos = n_sospitosos_pista,
-            culpable = culpable_pista,
+            culpabilitat = culpabilitat,
             utilitats = utilitats_pista)
 
         print("afegint pista nova a {}...".format(self.nom))

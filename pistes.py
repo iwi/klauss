@@ -8,26 +8,27 @@ class Pista():
 
     """
 
-    def __init__(self, nom, utilitat, n_sospitosos, culpable, utilitats):
+    def __init__(self, nom, utilitat, culpabilitat, utilitats):
         self.id = uuid.uuid1()
         self.nom = nom
         self.utilitat = utilitat
-        self.n_sospitosos = n_sospitosos
-        self.investigada = False
-        self.culpable = culpable
+        self.n_sospitosos = len(culpabilitat)
+        self.culpabilitat = culpabilitat
         self.indicadors = self.__genera_indicadors(utilitats)
 
     def __genera_indicadors(self, utilitats):
         """ Crea un array de si una pista apunta o no a cada sospitós.
         """
-        indicadors = []
-        for sospitos in range(self.n_sospitosos):
-            if sospitos == self.culpable:
-                indicador = True
-            else:
+        indicadors = {}
+        for culpable in self.culpabilitat:
+            if not self.culpabilitat[culpable]:
+                # els sospitosos no culpables tenen probabilitat de ser apuntats per aquesta pista
                 prob = random.uniform(0, 1)
-                indicador = prob < utilitats[self.utilitat]
-            indicadors.append(indicador)
+                indicadors.update({culpable : prob < utilitats[self.utilitat]})
+            else:
+                # el culpable
+                indicadors.update({culpable : True})
+
 
         return(indicadors)
 
@@ -41,10 +42,9 @@ class Pista():
         return "Id: {} \n".format(self.id) +\
                "Nom: {} \n".format(self.nom) +\
                "Utilitat: {} \n".format(self.utilitat) +\
+               "Culpabilitat: {} \n".format(self.culpabilitat) +\
                "Indicadors: {} \n".format(self.indicadors) +\
-               "Investigada?  {} \n".format(self.investigada) +\
-               "Nombre de sospitosos: {} \n".format(self.n_sospitosos) +\
-               "Culpable: {} \n".format(self.culpable)
+               "Nombre de sospitosos: {} \n".format(self.n_sospitosos)
 
     def emmascara(self, distribucio_nivell_emmascaracio):
         """ Crea indicadors per a una pista

@@ -55,18 +55,21 @@ print(ll1)
 # Afegir-hi algunes pistes
 ll1.afegeix_pista(nom_pista = "empremptes",
                   utilitat_pista = "util",
-                  n_sospitosos_pista = n_sospitosos,
-                  culpable_pista = culpable,
+                  culpabilitat = llista_sospitosos.sospitosos,
                   utilitats_pista = utilitats)
+
+print(ll1.pistes[0])
+
+ll1.afegeix_pista(nom_pista = "veí",
+                  utilitat_pista = "soroll",
+                  culpabilitat = llista_sospitosos.sospitosos,
+                  utilitats_pista = utilitats)
+
+print(ll1.pistes[1])
 
 ll1.afegeix_pista(nom_pista = "dna",
                   utilitat_pista = "determinant",
-                  n_sospitosos_pista = n_sospitosos,
-                  culpable_pista = culpable,
+                  culpabilitat = llista_sospitosos.sospitosos,
                   utilitats_pista = utilitats)
 
-ll1.afegeix_pista(nom_pista = "cabell",
-                  utilitat_pista = "soroll",
-                  n_sospitosos_pista = n_sospitosos,
-                  culpable_pista = culpable,
-                  utilitats_pista = utilitats)
+print(ll1.pistes[2])
