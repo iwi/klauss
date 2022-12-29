@@ -19,8 +19,6 @@ class LlistaSospitosos:
                 indicador = True
             else:
                 indicador = False
-            print(nom)
-            print(indicador)
             sospitosos.update({nom: indicador})
 
         return(sospitosos)
