@@ -8,11 +8,10 @@ class Pista():
 
     """
 
-    def __init__(self, nom, utilitat, n_sospitosos, lloc, culpable, utilitats):
+    def __init__(self, nom, utilitat, n_sospitosos, culpable, utilitats):
         self.id = uuid.uuid1()
         self.nom = nom
         self.utilitat = utilitat
-        self.lloc = lloc
         self.n_sospitosos = n_sospitosos
         self.investigada = False
         self.culpable = culpable
@@ -42,7 +41,6 @@ class Pista():
         return "Id: {} \n".format(self.id) +\
                "Nom: {} \n".format(self.nom) +\
                "Utilitat: {} \n".format(self.utilitat) +\
-               "Lloc: {} \n".format(self.lloc) +\
                "Indicadors: {} \n".format(self.indicadors) +\
                "Investigada?  {} \n".format(self.investigada) +\
                "Nombre de sospitosos: {} \n".format(self.n_sospitosos) +\

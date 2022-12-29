@@ -42,7 +42,6 @@ class Lloc():
             nom = nom_pista,
             utilitat = utilitat_pista,
             n_sospitosos = n_sospitosos_pista,
-            lloc = self.id,
             culpable = culpable_pista,
             utilitats = utilitats_pista)
 
