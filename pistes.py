@@ -60,28 +60,19 @@ class Pista():
         @return un array amb els indicadors de la pista emmascarats
         """
 
-        indicadors_emmascarats = map(lambda sospitos: self.__emmascara_indicador(distribucio_nivell_emmascaracio,
-                                                                               sospitos),
-                                     range(self.n_sospitosos))
-
-        return(list(indicadors_emmascarats))
-
-    def __emmascara_indicador(self, distribucio_nivell_emmascaracio, sospitos):
-        """ Emmascara l'indicador d'un sospitós
-        """
-
         keys = list(distribucio_nivell_emmascaracio.keys())
         keys.append("inconcloent")
         values = list(distribucio_nivell_emmascaracio.values())
         values.append(1 - sum(distribucio_nivell_emmascaracio.values()))
 
-        nivell_emmascaracio = random.choices(population = keys, weights = values)[0]
+        indicadors_emmascarats = {}
+        for indicador in self.indicadors:
+            nivell_emmascaracio = random.choices(population = keys, weights = values)[0]
+            if nivell_emmascaracio == 'veritat':
+                indicadors_emmascarats.update({indicador: self.indicadors[indicador]})
+            elif nivell_emmascaracio == 'mentida':
+                indicadors_emmascarats.update({indicador: not self.indicadors[indicador]})
+            else:
+                indicadors_emmascarats.update({indicador: None})
 
-        print("sospitós número {}".format(sospitos))
-        print(nivell_emmascaracio)
-        if nivell_emmascaracio == 'veritat':
-            return self.indicadors[sospitos]
-        elif nivell_emmascaracio == 'mentida':
-            return not(self.indicadors[sospitos])
-        else:
-            return None
+        return(indicadors_emmascarats)

@@ -73,3 +73,8 @@ ll1.afegeix_pista(nom_pista = "dna",
                   utilitats_pista = utilitats)
 
 print(ll1.pistes[2])
+
+
+ll1.pistes[0].emmascara(distribucio_nivell_emmascaracio)
+
+
