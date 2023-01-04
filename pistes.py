@@ -29,7 +29,6 @@ class Pista():
                 # el culpable
                 indicadors.update({culpable : True})
 
-
         return(indicadors)
 
     def __str__(self):
@@ -60,6 +59,7 @@ class Pista():
         @return un array amb els indicadors de la pista emmascarats
         """
 
+        # preparació de la distribució ... això hauria de ser fora
         keys = list(distribucio_nivell_emmascaracio.keys())
         keys.append("inconcloent")
         values = list(distribucio_nivell_emmascaracio.values())

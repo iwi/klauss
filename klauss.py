@@ -1,6 +1,7 @@
 # Klauss
 
 # Dependències
+import random
 from importlib import reload
 #import sys
 
@@ -37,7 +38,7 @@ distribucio_nivell_emmascaracio = {'veritat': 0.7,
 
 # Creem una llista de sospitosos i decidim qui és el culpable
 sospitosos = ["pinguí", "mona", "foca", "esquirol", "guineu"]
-culpable = "foca"
+culpable = random.choice(sospitosos)
 
 llista_sospitosos = sos.LlistaSospitosos(sospitosos, culpable)
 
@@ -66,6 +67,7 @@ ll1.afegeix_pista(nom_pista = "veí",
                   utilitats_pista = utilitats)
 
 print(ll1.pistes[1])
+print(ll1)
 
 ll1.afegeix_pista(nom_pista = "dna",
                   utilitat_pista = "determinant",
@@ -74,7 +76,28 @@ ll1.afegeix_pista(nom_pista = "dna",
 
 print(ll1.pistes[2])
 
-
+# Provem l'emmascaració d'una de les pistes
 ll1.pistes[0].emmascara(distribucio_nivell_emmascaracio)
 
+# Creem un investigador
+inv1 = inv.Investigador(nom = "Selina Felina", posicio_inicial = [0, 0], habilitats = "olfacte")
+print(inv1)
+inv1.cerca_pista(ll1)
+inv1.cerca_pista(ll1)
+inv1.cerca_pista(ll1)
+inv1.cerca_pista(ll1)
+inv1.cerca_pista(ll1)
+inv1.cerca_pista(ll1)
+inv1.cerca_pista(ll1)
+inv1.cerca_pista(ll1)
 
+inv1.investiga_pista(ll1.pistes[0], distribucio_nivell_emmascaracio)
+inv1.investiga_pista(ll1.pistes[1], distribucio_nivell_emmascaracio)
+inv1.investiga_pista(ll1.pistes[2], distribucio_nivell_emmascaracio)
+inv1.investiga_pista(ll1.pistes[0], distribucio_nivell_emmascaracio)
+inv1.investiga_pista(ll1.pistes[1], distribucio_nivell_emmascaracio)
+inv1.investiga_pista(ll1.pistes[2], distribucio_nivell_emmascaracio)
+
+inv1.mostra_investigador()
+
+print(inv1)
